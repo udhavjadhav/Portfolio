@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&family=Ubuntu&family=Varela+Round&display=swap');
+
+body{
+    /* background-image: url('https://images.pexels.com/photos/5507149/pexels-photo-5507149.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+    background-image: linear-gradient( 109.6deg,  rgba(0,0,0,1) 11.2%, rgba(11,132,145,1) 91.1% );
+    background-attachment: fixed;
+    background-size: 100%; 
+}
