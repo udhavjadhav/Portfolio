@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import Navbar from './Navbar';
+import Navbar from '../Navbar/Navbar';
 
 const P = styled.p`
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;

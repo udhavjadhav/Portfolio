@@ -2,14 +2,28 @@ import React from 'react'
 import styled from 'styled-components'
 import { useNavigate } from 'react-router-dom';
 import SearchIcon from '@mui/icons-material/Search';
+
 const Container = styled.div`
     display: flex;
     justify-content: center;
     text-align: center;
     height: 70px;
     width: 100%;
-
-`
+    .underline{
+      border-bottom: 2px solid darkorange;
+      padding: 10px;
+    }
+    .underline:hover{
+      border-bottom: 2px solid #fff;
+      border-top: 2px solid springgreen;
+    }
+    
+    @media screen and (max-width: 480px){
+        width: 100%;
+        padding: auto;
+        margin: auto;
+    }
+    `
 const Input = styled.input`
   border-radius: 55px;
   padding: 10px;
@@ -20,57 +34,38 @@ const Input = styled.input`
   border:2px solid #fff;
 `
 const Heading = styled.span`
-    /* position: sticky; */
     font-family:"Pacifico", cursive;
-    /* color: rgb(153, 50, 204); */
-    color: orange;
+    color: darkorange;
     font-size: 30px;
 `
 const List = styled.li`
-    /* font-family:"Pacifico", cursive; */
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     color: #fff;
     align-items: center;
     
     .icon{
-      background-color: #fff;
-      color: darkmagenta;
-      border-radius: 50%;
+      background-color: darkorange;
+      color: #fff;
+      border-radius: 10% 50% 50% 10%;
       padding: 8px;
       margin-left: 5px;
     }
     .icon:hover{
      opacity: 0.5;
      cursor: pointer;
-   
     }
 
  `
 
 const Span = styled.span`
-    margin-left: 10rem;
+    margin-left: 8rem;
     font-weight: bolder;
     cursor: pointer;
     &:hover{
-        color: orange;
+        color: darkorange;
     }
-`
-const Button = styled.button`
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: #000;
-  background-color: darkorange;
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  float: right;
-  margin-left: 100px;
-  font-weight: bolder;
-
-  &:hover{
-    opacity: 0.5;
-  }
+    
 `
 const Navbar = () => {
   const Navigate = useNavigate();
@@ -79,13 +74,13 @@ const Navbar = () => {
       <Container>
       <List>
         <Heading>Portfolio</Heading>
-        <Span onClick={()=>Navigate('/')}>Home</Span> 
-        <Span onClick={()=>Navigate('/about')}>About</Span> 
-        <Span onClick={()=>Navigate('/projects')}>Projects</Span>
-        <Span onClick={()=>Navigate('/contacts')}>Contacts</Span> 
+        <Span className='underline' onClick={()=>Navigate('/')}>HOME</Span> 
+        <Span className='underline' onClick={()=>Navigate('/about')}>ABOUT</Span> 
+        <Span className='underline' onClick={()=>Navigate('/projects')}>PROJECTS</Span>
+        <Span className='underline' onClick={()=>Navigate('/contacts')}>CONTACTS</Span> 
         <Span><Input placeholder='Search here...'></Input></Span>
         <SearchIcon className='icon'/>
-        <Button> Login </Button>
+        
       </List>
       </Container>
     </>

@@ -1,9 +1,9 @@
-import Home from './Components/Home';
-import About from './Components/About';
+import Home from './Components/Home/Home';
+import About from './Components/About/About';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Contacts from './Components/Contacts';
-import Projects from './Components/Projects';
+import Contacts from './Components/Contacts/Contacts';
+import Projects from './Components/Projects/Projects';
 function App() {
   return (
     <>
