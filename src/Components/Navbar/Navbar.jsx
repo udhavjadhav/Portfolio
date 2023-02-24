@@ -55,11 +55,10 @@ const List = styled.li`
      opacity: 0.5;
      cursor: pointer;
     }
-
  `
-
 const Span = styled.span`
-    margin-left: 8rem;
+    display: inline;
+    margin-left: 8rem; 
     font-weight: bolder;
     cursor: pointer;
     &:hover{
@@ -79,8 +78,7 @@ const Navbar = () => {
         <Span className='underline' onClick={()=>Navigate('/projects')}>PROJECTS</Span>
         <Span className='underline' onClick={()=>Navigate('/contacts')}>CONTACTS</Span> 
         <Span><Input placeholder='Search here...'></Input></Span>
-        <SearchIcon className='icon'/>
-        
+        <SearchIcon className='icon'/>  
       </List>
       </Container>
     </>

@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 const Container = styled.div`
      display: grid;
      grid-template-columns: 70% 30%;
+
 `
 const Container1 = styled.div`
     font-family: 'Roboto', sans-serif;
@@ -56,6 +57,7 @@ const Span = styled.span`
     color: #f72145;
 `
 const H3 = styled.h3``
+
 const Button = styled.button`
     padding: 12px;
     background-color: #f72145;
@@ -89,7 +91,7 @@ const Home = () => {
                     </Container3>
                 </Container1>
                 <Container2 className='img'>
-                    <img src="https://preview.colorlib.com/theme/personal/img/hero-img.png" alt="" />
+                    <img src="/assets/img.webp" alt="" />
                 </Container2>
             </Container>
         </>

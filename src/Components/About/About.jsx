@@ -6,14 +6,18 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import LanguageIcon from '@mui/icons-material/Language';
-import WebIcon from '@mui/icons-material/Web';
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+
 const Container = styled.div`
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
     text-align: center;
    
-    /* margin-top: 150px; */
+    .image{
+      height: 45px;
+      width: 45px;
+      margin: 10px;
+    }
     `
 const Container1 = styled.div`
   border: 1px solid orange;
@@ -91,7 +95,7 @@ const About = () => {
   return (
     <div>
       <Navbar />
-      <H1>About</H1>
+      <H1>About <InfoOutlinedIcon/></H1>
       <Container>
         <Container1>
           <H2> Who I am? </H2>
@@ -114,9 +118,14 @@ const About = () => {
         <Container3>
           <H2> My Experties </H2>
           <H4>React JS Development</H4>
+          <H4>Redux Development</H4>
           <H4>UI / UX Development</H4>
           <H4>Frontent Development</H4>
           <H4>Web Development</H4>
+          <img className='image' src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt="" />
+          <img className='image' src="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/redux-256.png" alt="" />
+          <img className='image' src="https://cdn4.iconfinder.com/data/icons/logos-3/456/nodejs-new-pantone-black-512.png" alt="" />
+
         </Container3>
       </Container>
     </div>
